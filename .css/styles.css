@@ -73,17 +73,23 @@ button:focus {
 /* tags */
 
 .container-tags {
-    margin: 50px auto;
-    width: 30px;
+    margin: 10px;
+    padding: 20px;
 }
 
-ul {
-    list-style-type: none    
-    ;
-
-}
 .tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap:wrap;
+    list-style: none;
+    padding-left: 0;
+}
 
+.tags__items {
+    padding: 10px;
+    background-color: #252629;
+    color: #fff;
+    border-radius: 15px;
 }
   
 /* footer */
@@ -98,10 +104,28 @@ ul {
 
 .footer_navbar {
     padding:0px;
-    display:inline-block;
-    margin:0px;
+    display:flex;
+    flex-wrap: wrap;
+    margin:20px;
     text-align: center;
     color: #fff;
     list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 50px;
+}
+
+.svg-home .svg-bookmark .svg-profile {
+    position: absolute;
+    
 
 }
+img:hover {
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+
