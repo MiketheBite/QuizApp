@@ -1,6 +1,9 @@
-* {
+*,
+*::after,
+*::before  {
     box-sizing: border-box;
 }
+
 
 
 body {    
@@ -11,6 +14,8 @@ body {
     font-family: "Lucida Grande", sans-serif;
     color: #404040;
     margin: 0;
+    padding-bottom: 200px;
+    flex-direction: column;
 }
 
 .quiz-header {
@@ -20,6 +25,7 @@ body {
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.24);
     padding: 10px;
     position: fixed;
+    justify-content: center;
     width: 100%;
     top: 0;
     z-index: 1;
@@ -31,9 +37,9 @@ body {
     border-radius: 20px;
     box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.5);
     width: 500px;
-    margin: 50px;
-    position: relative;
-    top: 60px; 
+    margin: 20px;
+    position:relative ;
+    top: 90px;
 }
 
 .quiz-question {
@@ -45,6 +51,13 @@ body {
     padding: 10px;
     text-align: center;
     margin: 0;
+}
+
+.card-bookmark {
+    position: absolute;
+    right: 10px;
+    top: -10px;
+
 }
 
 /* Button */
@@ -87,9 +100,11 @@ button:focus {
 
 .tags__items {
     padding: 10px;
-    background-color: #252629;
+    background-color: #55565a;
     color: #fff;
     border-radius: 15px;
+    font-size: 12px;
+    box-shadow:rgba(228, 225, 225, 1.5);
 }
   
 /* footer */
@@ -98,8 +113,8 @@ button:focus {
     background-color: #140523;
     color: #fff;
     position: fixed;
-    bottom: 0;
     width: 100%;
+    bottom: 0;
 }
 
 .footer_navbar {
@@ -118,14 +133,11 @@ img {
     width: 50px;
 }
 
-.svg-home .svg-bookmark .svg-profile {
-    position: absolute;
-    
-
+.svg-home, .svg-bookmark, .svg-profile {
+    margin: 0 40px 0 40px;
 }
 img:hover {
-    -webkit-transform: scale(1.5);
-    -moz-transform: scale(1.5);
-    -o-transform: scale(1.5);
+    transform: scale(1.5);
 }
+
 
