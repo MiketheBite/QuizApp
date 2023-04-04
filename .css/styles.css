@@ -21,14 +21,15 @@ body {
 .quiz-header {
     background-color: #140523;
     color: #fff;
-    height: 80px;
+    height: 70px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.24);
-    padding: 10px;
     position: fixed;
     justify-content: center;
-    width: 100%;
+    width: 550px;
     top: 0;
+    border-radius: 0 0 20px 20px;
     z-index: 1;
+    text-align: center;
 }
 
 
@@ -53,12 +54,7 @@ body {
     margin: 0;
 }
 
-.card-bookmark {
-    position: absolute;
-    right: 10px;
-    top: -10px;
 
-}
 
 /* Button */
 
@@ -113,8 +109,11 @@ button:focus {
     background-color: #140523;
     color: #fff;
     position: fixed;
-    width: 100%;
+    width: 550px;
     bottom: 0;
+    border-radius: 20px 20px 0 0;
+    z-index: 1;
+    height: 80px;
 }
 
 .footer_navbar {
@@ -129,15 +128,26 @@ button:focus {
     align-items: center;
 }
 
-img {
+
+
+.footer_icons{
+    margin: 0 60px 0 60px; 
     width: 50px;
+    
 }
 
-.svg-home, .svg-bookmark, .svg-profile {
-    margin: 0 40px 0 40px;
-}
-img:hover {
+.footer_icons:hover {
     transform: scale(1.5);
 }
 
+.card-bookmark {
+    width: 50px;
+    position: absolute;
+    right: 10px;
+    top: -10px;
+}
+
+  .card-bookmark:active {
+    content: url(/images/ribbon-green-com.png);
+  }
 
