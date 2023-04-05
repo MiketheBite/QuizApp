@@ -70,13 +70,11 @@ button {
     border: none;
     color: #fff;
     display:block;
-    width: 90%;
-    max-width: 500px;
+    width: 100%;
     cursor: pointer;
     font-size: medium;
     font-family: inherit;
     padding: 5px;
-    border-radius: 0 20px 20px 0;
 }
 
 button:hover {
