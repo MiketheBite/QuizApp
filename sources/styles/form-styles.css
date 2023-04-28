@@ -1,0 +1,10 @@
+@import "/sources/styles/global-styles.css";
+@import "/sources/styles/index-styles.css";
+
+.form-question {
+    color: var(--text-color);
+}
+
+.dark .form-question {
+    color: var(--basic-color);
+}

@@ -28,6 +28,10 @@ body {
     background-color: var(--dark-color);
 }
 
+.dark h1 {
+    color: var(--basic-color);
+}
+
 .quiz_header {
     background-color: var(--basic-color);
     box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.25);
