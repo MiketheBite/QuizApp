@@ -138,11 +138,7 @@ ol li {
 }
 
 .unbookmarked {
-  stroke: #387f02;
-}
-
-.bookmarked {
-  stroke: #007bff;
+  color: green;
 }
 
 .card__answer-hidden {
